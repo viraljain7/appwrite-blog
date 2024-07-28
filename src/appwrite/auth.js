@@ -47,7 +47,6 @@ export class AuthService {
             return await this.account.get();
         } catch (error) {
             console.log("Appwrite Service :: getCurrentUser :: error::", error);
-            throw error;
         }
         // eslint-disable-next-line no-unreachable
         return null;
